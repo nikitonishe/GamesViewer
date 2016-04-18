@@ -1,5 +1,5 @@
 <?php
-require("ClassGames.php");
+require("http://localhost/model/ClassGames.php");
 Class DataGame
 {
   private static $instance;
