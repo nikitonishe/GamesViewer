@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<?php require("../controller/AllGamesController.php"); ?>
+
+<html>
+<head>
+  <title>games</title>
+  <meta charset="utf-8"/>
+</head>
+<body>
+  <?php $AllGamesData = new AllGamesController();
+        $AllGamesData->printAllGamesData(); ?>
+</body>
+</html>
