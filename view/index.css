@@ -1,42 +1,29 @@
+article{
+  width:1028px;
+  margin:0 auto;
+}
 .image
 {
-	float:left;
-	clear:left;
-	border-radius: 10px;
-	padding: 0px;
-	margin: 10px;
+  float:left;
+  clear:left;
+  border-radius: 10px;
+  padding: 0px;
+  margin: 10px;
 }
 
-.information
+.name, .description
 {
-	float: left;
-	width:40%;
-	padding: 0px;
-	margin: 0px;
-}
-.name
-{
-	float: left;
-	padding: 5px;
-	margin: 10px;
+  float: right;
+  width:358px;
+  padding: 5px;
+  margin: 10px;
 }
 .description
 {
-	float: left;
-	clear: left;
-	text-align: justify;
-	padding: 5px;
-	margin: 10px;
-}
-.price
-{
-	float:left;
-	width: auto;
-	padding: 5px;
-	margin: 10px;
+  text-align: justify;
 }
  hr
- {
-	clear:left;
-	width:80%
- }
+{
+  clear: both;
+  width:80%
+}

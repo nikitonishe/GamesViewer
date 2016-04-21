@@ -9,16 +9,15 @@ $controller = new AllGamesController();?>
   <meta charset="utf-8"/>
 </head>
 <body>
+  <article>
 <?php $quantityOfGames = $controller->getQuantityOfGames();
       for($i = 0; $i < $quantityOfGames; $i++)
 	  { ?>
-        <img class = "image" src = "<?php $controller->getImageUrlById($i);?>" alt = <?php $controller->getNameById($i);?>> </img>
-        <div class = "information">
-	      <h1 class = "name"><?php $controller->getNameById($i);?></h1>
-          <p class = "description"> <?php $controller->getDescriptionById($i);?> </p>
-		  <p class = "price"><?php $controller->getPriceById($i);?>	</p>	  
-        </div>
+        <img class = "image" src = "<?php $controller->getImageUrlById($i);?>" alt = <?php $controller->getNameById($i);?>/>
+	    <h1 class = "name"><?php $controller->getNameById($i);?></h1>
+        <p class = "description"> <?php $controller->getDescriptionById($i);?> <br/><br/> <?php $controller->getPriceById($i);?></p>
 		<hr/>
 <?php } ?>
+  </article>
 </body>
 </html>
