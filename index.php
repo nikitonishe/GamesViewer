@@ -1,2 +1,1 @@
-<?php header("location: view")
-// qwerty?>
+<?php header("location: view")?>
