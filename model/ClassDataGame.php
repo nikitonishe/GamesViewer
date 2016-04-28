@@ -18,7 +18,7 @@ Class DataGame
   
   function getAllGamesData()
   {
-    $GameJson = file_get_contents("http://localhost/model/test.json");
+    $GameJson = file_get_contents(ROOT."/model/test.json");
     $GameStr = json_decode($GameJson,true);
     $games = array();
     foreach($GameStr["games"] as $value)

@@ -1,9 +1,9 @@
 <?php
-require("../model/ClassDataGame.php");
+require_once(ROOT."/model/ClassDataGame.php");
 
 class AllGamesController
 {
-  public function printAllGamesData()
+  public function actionPrintAllGamesData()
   {
     $dataGame = DataGame::singleton()->getAllGamesData();
     foreach($dataGame as $value)
@@ -13,6 +13,7 @@ class AllGamesController
 	  echo('<img src="'.$value->GetProperty("imageUrl").'" alt="'.$value->GetProperty("name").'" /><br/>');
       echo($value->GetProperty("info")."<br/><br/><br/>");
     }
+	return true;
   }
   
   public function getQuantityOfGames()
@@ -24,19 +25,19 @@ class AllGamesController
   public function getImageUrlById($id)
   {
 	$dataGame = DataGame::singleton()->getDataGame($id);
-	echo($dataGame->GetProperty("imageUrl"));
+	return($dataGame->GetProperty("imageUrl"));
   }
   
   public function getNameById($id)
   {
 	$dataGame = DataGame::singleton()->getDataGame($id);
-	echo($dataGame->GetProperty("name"));
+	return($dataGame->GetProperty("name"));
   }
   
   public function getDescriptionById($id)
   {
 	$dataGame = DataGame::singleton()->getDataGame($id);
-	echo($dataGame->GetProperty("info"));
+	return($dataGame->GetProperty("info"));
   }
   
   public function getPriceById($id)
@@ -45,11 +46,11 @@ class AllGamesController
 	$price = $dataGame->GetProperty("price");
 	if($price != "Бесплатно")
 	{
-		echo("Стоимость: ".$price." руб.");
+		return("Стоимость: ".$price." руб.");
 	}
 	else
 	{
-		echo($price);
+		return($price);
 	}
 	
   }
