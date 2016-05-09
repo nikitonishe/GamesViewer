@@ -1,5 +1,4 @@
 <?php 
-
 class Router
 {
 	private $routes;
@@ -23,24 +22,23 @@ class Router
 		$uri = $this->getURI();
 		foreach($this->routes as $uriPattern => $path)
 		{
-			if($uriPattern == $uri)
+			if(preg_match("~$uriPattern~",$uri))
 			{
+				$path = preg_replace("~$uriPattern~",$path,$uri);
 				$segments = explode('/',$path);
-				
-				$controllerName = array_shift($segments).'Controller';
-				$controllerName = ucfirst($controllerName);
-				
+				$controllerName = ucfirst(array_shift($segments).'Controller');
 				$actionName = 'action'.ucfirst(array_shift($segments));
-				
-				$controllerFile = ROOT."/Controllers/".$controllerName.".php";
-				if(file_exists($controllerFile))
+				$parametrs = $segments;
+				if(file_exists(ROOT.'/controllers/'.$controllerName.'.php'))
 				{
-					require_once($controllerFile);
+					require_once(ROOT.'/controllers/'.$controllerName.'.php');
 				}
 				
-				$controller = new $controllerName;
-				$result = $controller->$actionName();
 				
+				$controller = new $controllerName;
+				$result = call_user_func_array(array($controller,$actionName),$parametrs);
+				
+			
 				if($result == true)
 				{
 					break;

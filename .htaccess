@@ -1,5 +1,15 @@
 AddDefaultCharset utf-8
 
+<Files "index.css">
+DefaultType text/css
+ForceType text/css
+</Files>
+
 RewriteEngine on
 RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
 RewriteRule ^(.*)$ index.php

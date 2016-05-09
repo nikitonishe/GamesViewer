@@ -1,5 +1,5 @@
 <?php
-class Games
+class Game
 {
   private $id;
   private $name;

@@ -1,5 +1,7 @@
 <?php
 return array(
-	'view' => 'AllGames/printAllGamesData',
+	'games/view/([0-9]+)' => 'games/view/$1',
+	'games' => 'games/index',
+	'' => 'games/index'
 );
 ?>
