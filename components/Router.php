@@ -20,6 +20,7 @@ class Router
 	public function run()
 	{
 		$uri = $this->getURI();
+		$coincidence = false;
 		foreach($this->routes as $uriPattern => $path)
 		{
 			if(preg_match("~$uriPattern~",$uri))
@@ -41,10 +42,18 @@ class Router
 			
 				if($result == true)
 				{
+					$coincidence = true;
 					break;
 				}
 			}
 		}
+		if(!$coincidence)
+		{
+			require_once(ROOT.'/controllers/GamesController.php');
+			$controller = new GamesController;
+			$result = $controller->actionIndex();
+		}
+		
 	}
 }
 ?>
