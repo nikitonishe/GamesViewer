@@ -19,9 +19,9 @@ Class DataGame
 	  
 	private function getGameStr()
 	{
-		$GameJson = file_get_contents(ROOT.'/model/test.json');
-		$GameStr = json_decode($GameJson,true);
-		return $GameStr["games"];
+		$gameJson = file_get_contents(ROOT.'/model/test.json');
+		$gameStr = json_decode($gameJson,true);
+		return $gameStr["games"];
 	}
 	  
 	public function getAllGamesData()
@@ -31,13 +31,13 @@ Class DataGame
 		foreach($gameStr as $value)
 		{
 			extract($value);
-			$game = new Game($id,$name,$price,$imageUrl,$info);
+			$game = new Game($id,$name,$price,$imageName,$info);
 			array_push($games,$game);
 		}
 		return $games;
 	}
 	  
-	public function getGameData($gameId)
+	public function getGameDataById($gameId)
 	{
 		$gameStr = self::getGameStr();
 		foreach($gameStr as $value)
@@ -45,7 +45,7 @@ Class DataGame
 			extract($value);
 			if($id == $gameId)
 			{
-				$game = new Game($id,$name,$price,$imageUrl,$info);
+				$game = new Game($id,$name,$price,$imageName,$info);
 				return $game;
 			}
 		}

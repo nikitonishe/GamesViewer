@@ -4,15 +4,15 @@ class Game
   private $id;
   private $name;
   private $price;
-  private $imageUrl;
+  private $imageName;
   private $info;
 
-  function __construct($id, $name = "default",$price = "100000", $imageUrl = "",$info = "")
+  function __construct($id, $name = "default",$price = "100000", $imageName = "",$info = "")
   {
 	$this->id = $id;
 	$this->name = $name;
 	$this->price = $price;
-	$this->imageUrl = $imageUrl;
+	$this->imageName = $imageName;
 	$this->info = $info;
   }
   

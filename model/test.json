@@ -4,42 +4,42 @@
   "id":0,
   "name":"DARK SOULS III",
   "price":"2998",
-  "imageUrl":"/template/images/DarkSouls3.jpg",
+  "imageName":"DarkSouls3.jpg",
   "info":"Огонь гаснет, мир обращается в руины, и вам предстоят сражения с еще более колоссальными врагами. Вас ждет традиционная мрачная и притягательная атмосфера, напряженные битвы и еще более динамичный геймплей.Лишь угли тлеют во мраке... Соберитесь с духом и погрузитесь во тьму!"
   },
   {
   "id":1,
   "name":"RollerCoaster Tycoon World",
   "price":"899",
-  "imageUrl":"/template/images/RollerCoasterTycoonWorld.jpg",
+  "imageName":"RollerCoasterTycoonWorld.jpg",
   "info":"RollerCoaster Tycoon World™ - это современное воплощение легендарной серии. Следующее поколение симулятора парка развлечений и строительства содержит как уже полюбившиеся поклонникам игры функции, так и массу новинок - потрясающую 3-мерную графику, передающую захватывающий восторг от поездки на \"американских горках\" и каруселях; требовательную публику; генерируемый пользователем контент; интегрированные социальные функции и многое, многое другое. Все это - в одной потрясающе веселой игре!"
   },
   {
   "id":2,
   "name":"Stikbold",
   "price":"899",
-  "imageUrl":"/template/images/Stikbold.jpg",
+  "imageName":"Stikbold.jpg",
   "info":"Stikbold! – это игра в выбивалу, черпающая вдохновение из 70-х, когда быть аляповатым считалось крутым, а плохого стиля не существовало, в которой ты последуешь по стопам известных спортсменов. "
   },
   {
   "id":3,
   "name":"Mushroom wars",
   "price":"249",
-  "imageUrl":"/template/images/MushroomWars.jpg",
+  "imageName":"MushroomWars.jpg",
   "info":"Вам предстоит стать Генералом Грибной армии. Ваша роль храброго командира и умелого стратега в том, чтобы бороться с враждебными племенами, захватывать и удерживать владения, защитные башни и кузницы, и, увеличивая численность своей армии, одерживать победы на поле боя."
   },
   {
   "id":4,
   "name":"StarsOne",
   "price":"249",
-  "imageUrl":"/template/images/StarsOne.jpg",
+  "imageName":"StarsOne.jpg",
   "info": "В 2118 году была разработана программа под названием \"StarsOne\", цель которой освоение ближайших звезд. Была найдена подходящая планета и в течение 7 лет производилось её терраформирование. В 2125 году из команды добровольцев были выбраны лучшие и отправлены на подготовленную планету с целью основания там колонии и наладки связи с Землей. <br/> С первой волной прибыл корабль с колонистами, которые обосновались на планете, но вскоре связь с ними пропала. Вскоре стало ясно: в колонии что-то произошло. Вы отправлены на эту планету для поиска выживших. Прибыв на орбиту планеты, вы теряете связь с центром, все оборудование на корабле выходит из строя, корабль начинает падать. Весь экипаж, в том числе и вы, вынужден эвакуироваться. Но в связи с поломкой приходится управлять спасательными капсулами вручную. Это достаточно сложно, поэтому весь экипаж был разбросан по планете. Вам предстоит построить опорный пункт для выяснения причины поломок, поиска экипажа корабля и пропавших колонистов, восстановления и защиты колонии на этой планете, и продолжения освоения космоса."
   },
   {
   "id":5,
   "name":"Age of Conquest IV",
   "price":"Бесплатно",
-  "imageUrl":"/template/images/AgeOfConquest4.jpg",
+  "imageName":"AgeOfConquest4.jpg",
   "info": "Age of Conquest is a Risk-like turn-based grand strategy wargame. Command your armies in one of the many ancient and medieval countries including the Roman Empire, the Inca, France, Russia, Japan or the Chinese Dynasties. From Rome to Asian nations, you create your own warring experience. Wage colossal wars solo, against the AI, or take on your gaming friends in cross-platform multiplayer games. Form alliances and fight co-op style with the AI and other players for ultimate victory."
   }
   ]
