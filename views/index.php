@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php require_once ROOT."/template/slider/head.html";?>
 
 <body>
@@ -13,10 +12,4 @@
 </div>
 
 </body>
-</html>	
-=======
-<?php
-require_once(ROOT.'/template/Slider/index.html')
- ?>
-	
->>>>>>> d75af106588e89dc62643c92105a26e582f01b8b
+</html>

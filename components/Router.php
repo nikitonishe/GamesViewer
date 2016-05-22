@@ -51,14 +51,8 @@ class Router
 		{
 			require_once(ROOT.'/controllers/GamesController.php');
 			$controller = new GamesController;
-<<<<<<< HEAD
 			$controller->actionIndex();
 		}
-=======
-			$result = $controller->actionIndex();
-		}
-		
->>>>>>> d75af106588e89dc62643c92105a26e582f01b8b
 	}
 }
 ?>
